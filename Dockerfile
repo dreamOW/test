@@ -5,3 +5,4 @@ FROM busybox:latest
 RUN date;sleep 100;date
 RUN echo "abc" > /mytest
 RUN date;sleep 100;date
+CMD /bin/sh
