@@ -1,2 +1,6 @@
 test:
-    image: "busybox:test"
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: registry.chinacloudapp.cn:8080/test/busybox:test
+  stdin_open: true
